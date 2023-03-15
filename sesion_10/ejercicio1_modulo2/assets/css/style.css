@@ -1,0 +1,12 @@
+.expand {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    padding: auto;
+}
+
+.text-large {
+    font-size: xx-large;
+}

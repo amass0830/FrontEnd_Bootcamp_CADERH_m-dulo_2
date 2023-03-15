@@ -1,0 +1,82 @@
+
+.menu_restaurante {
+    color: #ffffff;
+    top: 11.5em;
+    align-self: center;
+    width: 50em;
+    position: absolute;
+    float: left;
+    overflow: hidden;
+
+}
+#list_nav {
+    list-style-type: none;
+    background-color: rgb(58, 56, 56);
+    display: inline-flex;
+}
+#item_list_nav {
+    background: #686464;
+    margin: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: #ffffff;
+}
+#datosgenerales{
+    padding-top: 100px;
+    background-size: 700px;
+    background-repeat: repeat-x;
+    background-image: url("./assets/images/fondo.jpg");
+    }
+#logo_mimrodel{
+    position: relative;
+    top: -7em;
+}
+#form { 
+    margin: 5em;
+    padding: auto;
+    position:  table;
+    vertical-align: middle;
+    border: 12px solid #ccc;
+    border-radius: 4px;
+    background-color: #303030;
+    color: #ccc;
+    text-align: center;
+}
+body {
+    margin: 0;
+    color: black;
+    background-color:  #ffffff
+
+}
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #7c7881;
+    text-align: center;
+    top: 1px;
+ }
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #7c7881;
+    text-align: center;
+    position: relative;
+ }
+ h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #7c7881;
+    text-align: center;
+    position: relative;
+ }
+
+p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #7c7881;
+    text-align: center;
+    position: relative;
+ }

@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
+
+/*Seccion styling Header*/
+h1 {
+    font-weight: 200;
+    font-size: 60px; 
+    color:rgb(199, 110, 219);
+    text-decoration-line: inherit;
+    margin-top: 65px; 
+    border-top: 10px dotted rgb(222, 190, 147);
+    border-bottom: 10px dotted burlywood;
+    font-size: 70px;
+    text-align: center;
+}

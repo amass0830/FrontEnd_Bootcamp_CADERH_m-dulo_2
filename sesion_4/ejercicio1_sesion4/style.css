@@ -1,0 +1,211 @@
+h1 {
+    margin-top: 10%;
+    color: white;
+    background-color: gainsboro;
+    margin: 6%;
+    padding: 4%;
+    border: grey solid 2px;
+    text-align: center;
+}
+
+/*
+
+Comienzo de responsividad mediante Grids CSS
+
+Pantalla de <=500px y Elementos ocultos en pantalla <=500px 
+
+*/
+
+@media only screen and (max-width: 500px) {
+    /* CSS rules for screens <= 500px */
+    .rosado {
+        background-color: pink;
+        text-align:center;
+        color: white;
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        display:block;
+    }
+    .verde {
+        background-color: greenyellow;
+        text-align:center;
+        color: white;
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        display:block;
+      }
+    .azul {
+        background-color: rgb(0, 187, 255);
+        text-align:center;
+        color: white;
+        width: 100%;
+        height: 40px;
+        display:block;
+    }
+    .rojo {
+        background-color: red;
+        text-align:center;
+        color: white;
+        width: 100%;
+        height: 80px;
+        display:block;
+    }
+    .morado {
+        background-color: violet;
+        text-align:center;
+        color: white;
+        clear: both;
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        display:none;
+    }
+    .gris {
+        background-color: grey;
+        text-align:center;
+        color: white;
+        clear: both;
+        width: 100%;        
+        height: 80px;
+        text-align: center;
+        display:none;
+    }
+  }
+
+
+/* 
+
+Pantalla entre 501px y 750px
+
+*/
+
+@media only screen and (min-width: 501px) and (max-width: 750px) {
+    .rosado {
+        background-color: pink;
+        text-align:center;
+        color: white;
+        width: 100%;
+        height: 110px;
+        text-align: center;
+        display:block;
+    }
+    .verde {
+        background-color: greenyellow;
+        text-align:center;
+        color: white;
+        width: 33.33%;
+        height: 100px;
+        float:left;
+        overflow: auto;
+        text-align: center;
+        display:block;
+    }
+    .azul {
+        background-color: rgb(0, 187, 255);
+        text-align:center;
+        color: white;
+        width: 33.33%;
+        height: 100px;
+        float: left;
+        overflow: auto;
+        display:block;
+    }
+    .rojo {
+        background-color: red;
+        text-align:center;
+        color: white;
+        width: 33.33%;
+        height: 100px;
+        float: left;
+        overflow: auto;
+        display:block;
+    }
+    .morado {
+        background-color: violet;
+        text-align:center;
+        color: white;
+        width: 60%;
+        height: 130px;
+        float: left;
+        overflow: auto;
+        display:block;
+    }
+    .gris {
+        background-color: grey;
+        text-align:center;
+        color: white;
+        width: 40%;        
+        height: 130px;
+        float: right;
+        overflow: auto;
+        display:block;
+    }
+}
+
+/* 
+
+Pantalla de >751
+
+*/
+
+@media only screen and (min-width: 751px) {
+    .rosado {
+        background-color: pink;
+        text-align:center;
+        color: white;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        display:block;
+    }
+    .verde {
+        background-color: greenyellow;
+        text-align:center;
+        color: white;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        display:block;
+    }
+    .azul {
+        background-color: rgb(0, 187, 255);
+        text-align:center;
+        color: white;
+        width: 100%;
+        height: 150px;
+        text-align: center;
+        display:block;
+    }
+    .rojo {
+        background-color: red;
+        text-align:center;
+        color: white;
+        width: 33.33%;
+        height: 100px;
+        float: left;
+        overflow: auto;
+        display:block;
+    }
+    .morado {
+        background-color: violet;
+        text-align:center;
+        color: white;
+        width: 33.33%;
+        height: 100px;
+        float: left;
+        overflow: auto;
+        display:block;
+    }
+    .gris {
+        background-color: grey;
+        text-align:center;
+        color: white;
+        width: 33.33%;
+        height: 100px;
+        float: left;
+        overflow: auto;
+        display:block;
+    }
+}

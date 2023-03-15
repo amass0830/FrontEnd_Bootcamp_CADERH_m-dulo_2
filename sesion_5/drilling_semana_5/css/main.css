@@ -1,0 +1,116 @@
+/* Classes & Id's from "index.html for a large screen"*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a :link {
+    color: #255ebd;
+}
+a :visited {
+    color: #fb1717;
+}
+address {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: #7c7881;
+
+}
+body {
+
+    color: black;
+    background-color:  #ffffff;
+}
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #7c7881;
+    text-align: center;
+}
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #7c7881;
+    text-align: center;
+    position: relative;
+}
+p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #7c7881;
+    text-align: center;
+    /* position: relative; */
+}
+.menu_restaurante {
+    color: #ffffff;
+    padding-left: 0.5em;
+    top: 16em;
+    width: 50em;
+    position: absolute;
+    float: left;
+    overflow: hidden;
+}
+#menu_nav {
+    padding-top: 100px;
+    background-size: 600px; 
+    background-image: url("/img/fondo.jpg");
+    background-repeat: repeat-x;
+    /*Comentario: Asumiendo que la imagen del nav es de esta manera.*/
+}  
+#comuniquemonos { 
+    border: 15px solid #ccc;
+    background-color: #303030;
+    color: #ccc;
+    text-align: center;
+    display: block;
+    margin-left: 18%;
+    overflow: auto;
+    width: 60%;
+    height: 600px;
+    margin-top: 10%;
+}
+#reservaform {
+    border: 15px solid #ccc;
+    background-color: #303030;
+    color: #ccc;
+    text-align: center;
+    display: block;
+    margin-left: 18%;
+    overflow: auto;
+    width: 60%;
+    height: 600px;
+    margin-top: 4%;
+}
+#footerphoto {
+    display: block;
+    height: 50%;
+    width: 100%;
+    justify-self: center;
+    margin-top: 35px;
+}
+.footer_nimrodel {
+    display: block;
+    margin-top: 2%;   
+}
+@media(max-width:1200px){  
+    #forms_páginas{
+        display: none;
+    }
+    #reservaform{
+        display: none;
+    }
+}   
+@media screen only (min-width:576px) and (max-width:991px){
+#forms_páginas{
+    display: none;
+}
+#reservaform{
+    display: none;
+}
+}
+
+

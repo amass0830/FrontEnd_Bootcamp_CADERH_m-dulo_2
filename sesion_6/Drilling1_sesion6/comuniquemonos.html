@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main_comuniquemonos.css">
+    <link rel="shortcut icon" href="img/logo_n.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"integrity="sha384-UHRtZLI+pbxtHCWp1t77BiL4ZtiqrqD800Kn4Z8NTSRyMA2Fd33n%dQ81WUE00s/" crossorigin="anonymous"> 
+    <title>Pub Restaurant Nimrodel</title>
+</head>
+<nav class="menu_restaurante">
+    <ul id="list_nav">
+        <li id="item_list_nav"><a href="/index.html">Nuestro menú</a></li>
+        <li id="item_list_nav"><a href="/index.html">Sobre Nosotros</a></li>
+        <li id="item_list_nav"><a href="/comuniquemonos.html">Comuniquémonos</a></li>
+        <li id="item_list_nav"><a href="/reserva.html">Reserva Aquí</a></li>
+    </ul>
+</nav>
+<body>
+    <section id="datosgenerales"> 
+        <img id="logo_mimrodel" src="img/layout/logo_n.png" height="150px" width="150px">
+        <h1>NIMRODEL PUB RESTAURANTE</h1>
+        <p><i>Tu lugar favorito de comidas </i></p>
+            <br>
+        <h2> COMUNÍCATE CON NOSOTROS </h2>
+        <p><i>Llena los siguientes datos para ponernos en comunicación a la brevedad con ustedes:</i></p>
+    </section>
+    <!--Comienzo de formulario-->
+    <form id="form" action="respuesta_reserva.html" method="get">
+        <section id="datos_generales_cliente">
+        <h3>Datos Generales del Cliente </h3>
+        <hr class="default">
+        <!--Botón de Nombre-->
+        <label for="name"> NOMBRE </label><br> 
+        <input type="text" name="nombre" id="nombre" placeholder="Jane Doe" required ></input>
+            <br><br>
+        <!--Botón de Email-->
+        <label for="email"> EMAIL </label><br> 
+        <input type="email" name="email" id="email" placeholder="tuemail@ejemplo.com" required></input>
+            <br><br> 
+        <!--Botón de Teléfono-->
+        <label for="número_telefono"> TELÉFONO </label><br> 
+        <input type="tel" name="número_telefono" id="número_telefono" placeholder="+504 XXXXX XXXX" maxlength="13" required></input>
+        <br><br>
+    </section>
+    <hr class="default">
+    <section id="motivos_sugerencias">
+        <label for="motivo">MOTIVO</label><br>
+            <i>Por favor, selecciona un motivo</i><br>
+                <select id="especialidades_médicas">
+                    <option value="felicitaciones"> FELICITACIONES </option>
+                    <option value="reclamos"> RECLAMOS </option>
+                    <option value="consultas"> CONSULTAS </option>
+                    <option value="sugerencias"> SUGERENCIAS </option>
+                </select> <br>
+            <label for="motivo"></label><br>
+            <textarea name="motivo" id="motivo" placeholder="Escribe tu mensaje aquí, por favor." cols="40" rows="10"></textarea>
+            <br><br>
+    <!--Botón para submit el formulario con link a respuesta default-->
+    <button type="submit"> ENVIO </button>
+    </section>
+    </form>
+</body>
+<footer>
+    <div id="rights_reserved">
+        <hr class="default"> 
+        <p>Todos los derechos reservados &reg;</p>
+        <p>&copy; 2022 Nimrodel Pub Restaurant</p>
+        
+    </div>
+</footer>
+</html>

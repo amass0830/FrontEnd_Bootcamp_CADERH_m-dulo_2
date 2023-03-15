@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a :link {
+    color: #255ebd;
+}
+
+a :visited {
+    color: #fb1717;
+}
+
+address {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: #7c7881;
+}
+
+body {
+    color: black;
+    background-color: #ffffff;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #7c7881;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #7c7881;
+    text-align: center;
+    position: relative;
+}
+
+p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #7c7881;
+    text-align: center;
+    /* position: relative; */
+}
+
+.menu_restaurante {
+    color: #ffffff;
+    padding-left: 0.5em;
+    top: 16em;
+    width: 50em;
+    position: absolute;
+    float: left;
+    overflow: hidden;
+}
+
+#menu_nav {
+    padding-top: 100px;
+    background-size: 600px;
+    background-image: url("/img/layout/fondo.jpg");
+    background-repeat: repeat-x;
+    /*Comentario: Asumiendo que la imagen del nav es de esta manera.*/
+}
+
+#logo_mimrodel{
+    position: relative;
+    top: -7em;
+}
+
+#form_2 {
+    margin: auto;
+    padding: 4%;
+    margin-top: 4%;
+    background-color: #303030;
+    color: #ccc;
+    align-content: center;
+    width: 700px;
+    opacity: 1;
+    display: block;
+    height: auto;
+    border-radius: 2%;
+    text-align: center;
+}
+
+#footerphoto {
+    text-align: center;
+    max-width: 100%;
+    margin-top: 300px;
+    height: 1500px;
+    background-size: cover;
+    background-image: url("/img/layout/fondo.jpg");
+}
+
+.img-fluid {
+    max-width: 100%
+}
+
+.DR {
+    text-align: center;
+}
+
+.footer_nimrodel {
+    display: block;
+    margin-top: 10%;
+}
+
+@media (max-width:991px) {
+    #formpaginas {
+        display: none;
+    }
+}

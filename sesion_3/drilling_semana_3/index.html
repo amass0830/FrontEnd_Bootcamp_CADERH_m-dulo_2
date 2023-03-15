@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="/sesion_3/drilling_semana_3/assets/images/logo_n.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"integrity="sha384-UHRtZLI+pbxtHCWp1t77BiL4ZtiqrqD800Kn4Z8NTSRyMA2Fd33n%dQ81WUE00s/" crossorigin="anonymous"> 
+    <title>Pub Restaurant Nimrodel</title>
+</head>
+<nav class="menu_restaurante">
+    <ul id="list_nav">
+        <li id="item_list_nav"><a href="/sesion_3/drilling_semana_3/index.html">Nuestro menú</a></li>
+        <li id="item_list_nav"><a href="/sesion_3/drilling_semana_3/index.html">Sobre Nosotros</a></li>
+        <li id="item_list_nav"><a href="/sesion_3/drilling_semana_3/comuniquemonos.html">Comuniquémonos</a></li>
+        <li id="item_list_nav"><a href="/sesion_3/drilling_semana_3/reserva.html">Reserva Aquí</a></li>
+    </ul>
+</nav>
+
+<body>
+    <section id="menu_nav">    
+        <!--<div id="menu_nav_sect"> 
+            <img id="fondo_logo_1" src="/sesion_3/drilling_semana_3/assets/images/fondo.jpg">
+            <img id="fondo_logo_2" src="/sesion_3/drilling_semana_3/assets/images/fondo.jpg">
+            <img id="fondo_logo_3" src="/sesion_3/drilling_semana_3/assets/images/fondo.jpg">
+        </div> -->
+        <img id="logo_mimrodel" src="assets/images/logo_n.png" height="150px" width="150px">
+        <h1> Nimrodel Pub Restaurant</h1>    
+    </section> 
+
+    <section id="Menu_Principal" >
+        <div id="gaseosas_menuprincipal">
+                <img id="Menu_bebidas_n" src="/assets/images/bebidas_menu.jpg" height="245px" width="300px">
+                <dt><h3>Gaseosas</h3>
+                    <dd>Este menú contiene diversas gaseosas, tales como:</dd>
+                    <ol>
+                        <li>Coca Cola</li>
+                        <li>Sprite</li>
+                        <li>Fanta</li>
+                        <li>Canada Dry</li>
+                    </ol>
+                </dt>
+        </div>
+    
+        <div id="queso_menu">
+            <img id="Menu_tablas_quesos_n" src="/assets/images/tablas_menu.jpg" height="245px" width="300px">
+            <dt><h3>Tablas de Queso</h3>
+                <dd>Este menu contiene diversas tipos de queso:</dd>
+                <ol>
+                    <li>Queso Cheddar</li>
+                    <li>Queso Mozzarella</li>
+                    <li>Queso Feta</li>
+                    <li>Queso Americano</li>
+                </ol>
+            </dt>
+        </div>
+        <div id="cervezas_menuprincipal">
+            <img id="Menu_cervezas_n" src="assets/images/cerveza_menu.jpeg" height="245px" width="300px">
+            <dt><h3>Cervezas</h3>
+                <dd>Este menu contiene diversas tipos de cerveza:</dd>
+                <ol>
+                    <li>Michelob Ultra</li>
+                    <li>Heineken</li>
+                    <li>Corona</li>
+                    <li>Tecate</li>
+                </ol>
+            </dt>
+        </div>      
+    </section> 
+    <!--FORMULARIO: COMUNIQUEMONOS-->
+    <form id="comuniquemonos" action="respuesta_reserva.html" method="get">
+        <section id="datos_generales_cliente">
+        <h3>Datos Generales del Cliente </h3>
+        <hr class="default">
+        <!--Botón de Nombre-->
+        <label for="name"> NOMBRE </label><br> 
+        <input type="text" name="nombre" id="nombre" placeholder="Jane Doe" required ></input>
+            <br><br>
+        <!--Botón de Email-->
+        <label for="email"> EMAIL </label><br> 
+        <input type="email" name="email" id="email" placeholder="tuemail@ejemplo.com" required></input>
+            <br><br> 
+        <!--Botón de Teléfono-->
+        <label for="número_telefono"> TELÉFONO </label><br> 
+        <input type="tel" name="número_telefono" id="número_telefono" placeholder="+504 XXXXX XXXX" maxlength="13" required></input>
+        <br><br>
+    </section>
+    <hr class="default">
+    <section id="motivos_sugerencias">
+        <label for="motivo">MOTIVO</label><br>
+            <i>Por favor, selecciona un motivo</i><br>
+                <select id="especialidades_médicas">
+                    <option value="felicitaciones"> FELICITACIONES </option>
+                    <option value="reclamos"> RECLAMOS </option>
+                    <option value="consultas"> CONSULTAS </option>
+                    <option value="sugerencias"> SUGERENCIAS </option>
+                </select> <br>
+            <label for="motivo"></label><br>
+            <textarea name="motivo" id="motivo" placeholder="Escribe tu mensaje aquí, por favor." cols="40" rows="10"></textarea>
+            <br><br>
+    <!--Botón para submit el formulario con link a respuesta default-->
+    <button type="submit"> ENVIO </button>
+    </section>
+    </form>
+    <!--FORMULARIO RESERVA-->
+    <form id="reservaform" action="respuesta_reserva.html" method="get">
+        <section id="datos_generales_cliente">
+        <h3>Datos Generales del Cliente</h3>
+        <hr class="default">
+        <!--Botón de Nombre-->
+        <label for="name"> NOMBRE </label><br> 
+        <input type="text" name="nombre" id="nombre" placeholder="Jane Doe" required ></input>
+            <br><br>
+        <!--Botón de Email-->
+        <label for="email"> EMAIL </label><br> 
+        <input type="email" name="email" id="email" placeholder="tuemail@ejemplo.com" required></input>
+            <br><br> 
+        <!--Botón de Teléfono-->
+        <label for="número_telefono"> TELÉFONO </label><br> 
+        <input type="tel" name="número_telefono" id="número_telefono" placeholder="+504 XXXXX XXXX" maxlength="13" required> </input>
+            <br><br>
+    </section>
+    <hr class="default">
+    <section id="eventos_reservación">
+        <!--Botón para introducir fecha-->
+        <label for="fecha"> FECHA </label><br> 
+        <i>Escoge la fecha de tu reservación.</i><br>
+        <input type="date" name="fecha" id="fecha" required></input>
+            <br><br>
+        <!--Botón para seleccionar una hora-->
+        <label for="hora"> HORA </label><br>
+        <i>Escoge el horario de tu reservación.</i><br>
+        <input type="time" name="hora" id="hora" required></input>
+            <br><br>
+        <!--Botón de Invitados-->
+        <label for="cantidad_invitados"> Cantidad de Invitados </label><br> 
+        <input type="number" name="cantidad_invitados" id="cantidad_invitados" placeholder="000" maxlength="000"required> </input>
+            <br><br>
+    <!--Botón para submit el formulario con link a respuesta default-->
+        <button type="submit" value="CONFIRMAR">CONFIRMAR</button>
+    </section>
+</form>
+</body>
+
+<footer class="footer_nimrodel">
+    <div id="rights_reserved">
+        <hr class="default"> 
+        <img id="footerphoto" src="assets/images/fondo.jpg">
+                <p>Todos los derechos reservados &reg;</p>
+                <p>&copy; 2022 Nimrodel Pub Restaurant</p>
+        </a>
+
+        
+    </div>
+
+    </div>
+</footer>
+</html>

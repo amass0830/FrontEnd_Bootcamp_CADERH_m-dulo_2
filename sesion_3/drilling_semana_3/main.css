@@ -1,0 +1,143 @@
+/* Classes & Id's from "index.html"*/
+.menu_restaurante {
+    color: #ffffff;
+    padding-left: 0.5em;
+    top: 16em;
+    width: 50em;
+    position: absolute;
+    float: left;
+    overflow: hidden;
+}
+#Menu_Principal{
+        display: flexbox;
+        align-self: center;
+        margin-left: 25em;
+}
+#list_nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #222020;
+    display: inline-flex;
+
+}
+#item_list_nav {
+    background: #2c2a2a;
+    border-left: beige;
+    border-style: double black;
+    margin: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: #ffffff;
+}
+#menu_nav {
+    background-color: #2c2a2a;
+    padding-top: 100px;
+    background-size: 600px;
+    background-image: url("./assets/images/fondo.jpg");
+    background-repeat: repeat-x;
+
+}
+/*Comentario: Asumiendo que la imagen del nav es de esta manera.*/
+
+a :link {
+    color: #255ebd;
+}
+a :visited {
+    color: #fb1717;
+}
+address {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: thin dotted }
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: #7c7881;
+    background-color: white;
+    text-align: center;
+    position: inherit;
+}
+body {
+    margin: 0;
+    color: black;
+    background-color:  #ffffff
+
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #7c7881;
+    text-align: center;
+    position: relative;
+    }
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #7c7881;
+    text-align: center;
+    position: relative;
+}
+p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #7c7881;
+    text-align: center;
+    position: relative;
+ }
+
+#Menu_Principal {
+    display: flex; 
+}
+
+#footerphoto {
+    height: 40em;
+    width: 70em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 1em;
+    box-sizing: border-box;
+}
+
+/*CSS FORM STYLING*/ 
+#comuniquemonos { 
+    border-radius: 15em;
+    border: 15px solid #ccc;
+    display: inline-block;
+    float: left;
+    margin: 5em;
+    margin-left: 25em;
+    padding: 50px;
+    position:  table;
+    border-radius: 4px;
+    background-color: #303030;
+    color: #ccc;
+    text-align: center;
+}
+
+#reservaform {
+    border-radius: 15em;
+    border: 15px solid #ccc;
+    display: inline-block;
+    margin: 5em;
+    padding: 65px;
+    padding-left: 115px;
+    padding-right: 115px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    position:  table;
+    border-radius: 4px;
+    background-color: #303030;
+    color: #ccc;
+    text-align: center;
+}
+#footerphoto {
+    display: flex;
+    margin-left: 385px;
+}

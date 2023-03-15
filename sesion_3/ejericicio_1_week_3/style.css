@@ -1,0 +1,56 @@
+#celda_rojo {
+  background-color: #ff0000 ;
+}
+
+#celda_blanco {
+  background-color:  #ffffff ;
+}
+
+#celda_verde {
+  background-color:  #009000 ;
+}
+
+#celda_gris {
+  background-color:  #808080;
+}
+
+#celda_café {
+  background-color:  #b1001f ;
+}
+
+#celda_azul {
+  background-color:  #6300ff ;
+}
+
+#celda_violeta {
+  background-color: #ff36ef ;
+}
+#celda_rosado {
+  background-color:  #ffb6c9 ;
+}
+
+#celda_amarillo {
+  background-color: #f1ff00;
+}
+
+
+#celda_turquesa {
+ background-color: #00ebd2;
+}
+
+#celda_naranjo {
+  background-color: #ffa900;
+}
+
+#celda_púrpura {
+  background-color:#910081;
+}
+#celda_negro {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+
+
+
+

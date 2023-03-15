@@ -1,0 +1,28 @@
+.container { 
+    background-color: rgb(246, 164, 214);
+    border-radius: 100%;
+    padding: 50px;
+    justify-content: center;
+    margin: 10px;
+    color: black;
+    border: 2px grey solid;
+    text-align: center;
+    height: 500px;
+    width: 500px;
+}
+p { 
+    text-size-adjust: 5em;
+    text-align: center;
+}
+h1 { 
+    text-size-adjust: 6em;
+    text-align: center;
+}
+ul, ol, h5 { 
+    text-size-adjust: 5em;
+    text-align: left;
+}
+h1, h5{ 
+    color: white;
+}
+

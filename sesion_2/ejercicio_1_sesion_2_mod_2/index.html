@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/logo_medical" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"integrity="sha384-UHRtZLI+pbxtHCWp1t77BiL4ZtiqrqD800Kn4Z8NTSRyMA2Fd33n%dQ81WUE00s/" crossorigin="anonymous">  
+    <title>Clínicas Médicas</Form></title>
+</head>
+
+<body>
+    <section id="Datos Generales"> 
+        <h1><img id="logo_clínicas_médicas" src="/ejercicio_1_sesion_2_mod_2/assets/images/logo_medical" width: 30px; height="30px"> 
+            Clínicas Médicas CADER-H </CADER-H></h1>
+        <p><i>Tu clínica de Especialidades médicas</i></p>
+            <br>
+    <div id="menu_clinica">
+        <hr class="default">
+        <a href="contáctanos">Contáctanos</a>
+        <a href="redes_sociales">Redes Sociales</a>
+        <a href="acerca_de">Acerca de Nosotros</a>
+        <hr class="default">
+    </div>
+        <h2>Formulario para apertura de citas médicas </h2>
+        <p><i>Para poder realizar una cita médica en nuestras clínicas, será necesario que llenes los siguientes espacios:</i></p>
+    </section>
+    <!--Comienzo de formulario-->
+    <form action="submit.html" method="get">
+        <section id="datos_generales_paciente">
+        <h3>Datos Generales del Paciente</h3>
+        <hr class="default">
+        <!--Botón de Nombre-->
+        <label for="name"> NOMBRE </label><br> 
+        <input type="text" name="nombre" id="nombre" placeholder="Jane Doe" required ></input>
+            <br><br>
+
+        <!--Botón de Dirección-->
+        <label for="dirección"> DIRECCIÓN </label><br> 
+        <input type="text" name="dirección" id="dirección" placeholder="Colocar tu dirección" required></input>
+            <br><br> 
+        <!--Botón de Teléfono-->
+        <label for="número_telefono"> TELÉFONO </label><br> 
+        <input type="tel" name="número_telefono" id="número_telefono" placeholder="+504 0000 0000" maxlength="13" required></input>
+            <br><br>
+        <!--Botón de Email-->
+        <label for="email"> EMAIL </label><br> 
+        <input type="email" name="email" id="email" placeholder="tumail@ejemplo.com"required></input>
+            <br><br>
+    </section>
+    <hr class="default">
+    <section id="especialidades_clínicas_hora">
+         <!--Botón de selección: Especialidad Médicas-->
+        <label for="especialidad_médica"> ESPECIALIDAD MÉDICA </label><br> 
+        <i>Por favor, selecciona una especialidad médica.</i><br>
+            <select id="especialidades_médicas">
+                <option value="medicina_interna"> MEDICINA INTERNA </option>
+                <option value="medicina_general"> MEDICINA GENERAL </option>
+                <option value="traumatología"> TRAUMATOLOGÍA </option>
+                <option value="nutriólogo"> NUTRIÓLOGO </option>
+            </select>
+                <br><br>
+        <!--Botón para introducir fecha-->
+        <label for="fecha"> FECHA </label><br> 
+        <i>Escoge la fecha de tu cita.</i><br>
+        <input type="date" name="fecha" id="fecha" required></input>
+        <br><br>
+        <!--Botón para seleccionar una hora-->
+        <label for="hora"> HORA </label><br>
+        <i>Escoge el horario de tu cita.</i><br>
+        <input type="time" name="hora" id="hora" required></input>
+        <br><br>
+    <!--Botón para submit el formulario con link a respuesta default-->
+    <button type="submit">Submit</button>
+    
+</form>
+</section>
+</body>
+</html>
