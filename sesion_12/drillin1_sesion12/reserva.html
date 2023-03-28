@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/main.css">
+            <link rel="shortcut icon" href="img/layout/logo_n.png" type="image/x-icon">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+                integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+            <script src="js/logic.js"></script>
+            <title>Pub Restaurant Nimrodel</title>
+        </head>
+
+        <body>
+            <nav class="navbar navbar-expand-sm navbar-light text-bg-danger">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html"> Nimrodel </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                        aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarID">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Sobre Nosotros</a>
+                            <a class="nav-link active" aria-current="page" href="/comuniquemonos.html">Comuniquémonos</a>
+                            <a class="nav-link active" aria-current="page" href="/reserva.html">Reserva aquí</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <header id="menu_nav">
+                <img id="logo_mimrodel" src="img/layout/logo_n.png" height="150px" width="150px">
+            </header>
+            <div class="text-center my-5">
+                <h1> Nimrodel Pub Restaurant</h1>
+                <p>
+                    <i>Tu lugar favorito de comidas</i>
+                    <br>
+                    <h2>Formulario para apertura de reserva en nuestro restaurante </h2>
+                    <i>Para poder realizar una reservación en nuestras instalaciones, será necesario que llenes los siguientes espacios:</i>
+                </p>
+            </div>
+            <!--Comienzo de formulario-->
+            <section id="forms_páginas">
+                <div class="form">
+                    <form id="form_2" onsubmit="noDataRegistered2()">
+                        <h2>Reserva</h2>
+                        <div class="form-group">
+                            <label for="formName2" class="form-label d-block">Nombre</label>
+                            <input type="text" class="form-control" id="formName2" placeholder="Jane" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formSurname2" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="formSurname2" placeholder="Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formInputEmail2">Email address</label>
+                            <input type="email" class="form-control" id="formInputEmail2" aria-describedby="emailHelp"
+                                placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="formInputNumber2" class="form-label">Teléfono</label>
+                            <input type="phone_no" class="form-control" id="formInputNumber2" placeholder="+504 0000-0000" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-group" for="formDate2">Date</label>
+                            <input class="form-control bs-linebreak" id="formDate2" name="date" placeholder="MM/DD/YYY" type="text" />
+                        </div>
+                        <div class="form-group">
+                            <label for="formAsistentes2" class="form-label">Cantidad de Asistentes</label>
+                            <input type="number" class="form-control" id="formAsistentes2" placeholder="Selecciona la cantidad de personas"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formInputHour2" class="form-label">Coloca la hora de reserva</label>
+                            <div class="input-group date timepicker" data-date-format="HH:mm" data-date-useseconds="false"
+                                data-date-pickDate="false">
+                                <input type="time" placeholder="HH:MM" position class="fa fa-align-center" id="formInputHour2"
+                                    aria-hidden="true" />
+                                <div class="input-group-addon">
+                                    <i class="fa fa-clock-o"></i>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm">Sign in</button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </body>
+        <footer>
+            <div id="rights_reserved">
+                <hr class="default"> 
+                <p>Todos los derechos reservados &reg;</p>
+                <p>&copy; 2022 Nimrodel Pub Restaurant</p>
+                
+            </div>
+        </footer>
+    </html>
+</html>
