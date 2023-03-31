@@ -66,12 +66,13 @@ $(document).ready(function() {
   });
 });
 
-
 $(document).ready(function() {
-  const sobrenosotros = document.getElementById("sobrenosotros");
+$("#sobreNosotros").click(function() { 
+  $("#nimrodel_carousel").show();
+})
 
-  sobrenosotros.addEventListener("click", function() {
-    const carousel = document.querySelector("#carouselNimrodel");
-    $(carousel).carousel();
-  });
-});
+$("#").click(function() { 
+  $("#nimrodel_carousel").hide();
+})
+
+})

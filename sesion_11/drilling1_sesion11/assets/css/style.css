@@ -3,25 +3,26 @@ body {
     padding: 0px 40px;
 }
 
+p {
+    color: rgb(38, 8, 67);
+}
+
 .card {
-    background-color: aquamarine;
+    background-color: plum;
     align-items: center;
-    border: solid rgb(60, 146, 117);
+    border: solid rgb(38, 8, 67);
     padding: 15px;
 }
 
-#norrispic {
+#ghibliMovieArt {
     align-self: center;
     align-items: center;
     padding: 20x;
-    border: solid rgb(60, 146, 117);
+    border: solid rgb(38, 8, 67);
 }
 
-p {
-    color: rgb(60, 146, 117);
-}
-
-#jokeText {
+#moreMovieInfo {
     padding: 8px;
     color: rgb(38, 8, 67);
 }
+
