@@ -1,40 +1,30 @@
 window.addEventListener('DOMContentLoaded', () => {
-  async function getpickedDigimon() {
-    try {
-      const apiDigimonURL = "https://digimon-api.vercel.app/api/digimon";
-      const resPickedDigimon = await fetch(apiDigimonURL);
 
-      if (!resPickedDigimon.ok) {
-        throw new Error(`HTTP error! status: ${resPickedDigimon.status}`);
-      }
+  async function getGhibliMovie() {
+    const apiGhibliURL = "https://studio-ghibli-films-api.herokuapp.com/api/Howl's%20Moving%20Castle";
+    const resGhibliMovie = await fetch(apiGhibliURL);
+    const dataGhibliMovie = await resGhibliMovie.json();
+    const ghibliInfoTemplate = `
+      <div class="howls-moving-castle">
+        <img src =${dataGhibliMovie.poster}>
+        <h3>Título: ${dataGhibliMovie.title}</h3>
+        <p>Sinopsis: ${dataGhibliMovie.synopsis}</p>
+        <h6>Título romanizado: ${dataGhibliMovie.hepburn}</h6>
+        <h6>Año de Estreno: ${dataGhibliMovie.release}</h6>
+        <h6>Director: ${dataGhibliMovie.director}</h6>
+      </div>
+    `; 
+    const ghibliMovieInfo = document.querySelector(".ghibliInfo");
+    ghibliMovieInfo.innerHTML = ghibliInfoTemplate;
 
-      const dataPickedDigimon = await resPickedDigimon.json();
+    const showMovieButton = document.getElementById("moreGhibliInformation");
+    const masInformacion = `<div><h6> Su puntuación en RottenTomatoes fue de: ${dataGhibliMovie.reviews.rottenTomatoes}</h6></div>`
+  
+    showMovieButton.addEventListener('click', () => {
+       showMovieButton.insertAdjacentHTML('afterend', masInformacion);
+    });
+  } 
 
-      if (Array.isArray(dataPickedDigimon) && dataPickedDigimon.length > 0) {
-        // Shuffle the response data to get a random Digimon
-        const shuffledDataPickedDigimon = dataPickedDigimon.sort(() => Math.random() - 0.5);
+  getGhibliMovie();
 
-        const pickedDigimonInfoTemplate = `
-          <div class="digimon">
-            <img src="${shuffledDataPickedDigimon[0].img}">
-            <h3>Nombre: ${shuffledDataPickedDigimon[0].name}</h3>
-            <p>lvl: ${shuffledDataPickedDigimon[0].level}</p>
-          </div>
-        `;
-        const pickedDigiInfo = document.querySelector("#pickedDigimonInfo");
-        pickedDigiInfo.innerHTML = pickedDigimonInfoTemplate;
-
-        // Show the pickedDigimon element
-        const pickedDigimonElement = document.querySelector(".pickedDigimon");
-        pickedDigimonElement.style.display = "block";
-      } else {
-        console.log("No data found in response.");
-      }
-    } catch (error) {
-      console.error('Error:', error);
-    }
-  }
-
-  const pickDigimonButton = document.querySelector("#pickdigimon");
-  pickDigimonButton.addEventListener("click", getpickedDigimon);
 });

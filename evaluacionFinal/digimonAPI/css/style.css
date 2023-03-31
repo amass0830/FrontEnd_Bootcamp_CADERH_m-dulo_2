@@ -41,9 +41,8 @@ html{
 @media only screen and (max-width: 768px) {
     .container{
         width: 100%;
-        grid-template-columns: 1fr;
-        padding: 3rem;
-        gap: 7rem;
+        padding: 2rem;
+        gap: 2rem;
     }
 }
 
@@ -109,11 +108,19 @@ a{
 .card{
     color: var(--primary-color);
     background-color: #15191b;
-    align-items: center;
-    margin-left: 18%;
+    align-items: center;;
     border:5px solid#be97f7;
 }
-  
+
+@media only screen and (max-width: 768px) {
+    .card{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 3rem;
+    }
+}
+
 .botonesspace {
     gap: 2rem;
     display: flex;

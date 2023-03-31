@@ -1,5 +1,3 @@
-
-  
 window.addEventListener('DOMContentLoaded', () => {
     async function getpickedDigimon() {
       try {
@@ -36,5 +34,37 @@ window.addEventListener('DOMContentLoaded', () => {
     pickDigimonButton.addEventListener("click", () => {
       getpickedDigimon();
     });
+  });
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const apiDigiURL = "https://digimon-api.vercel.app/api/digimon";
+  
+    async function getDigimons() {
+      const res = await fetch(apiDigiURL);
+      const dataGetDigimons = await res.json();
+      return dataGetDigimons;
+    }
+  
+    async function renderDigimons() {
+      const digimons = await getDigimons();
+      let digimontemplate = "";
+      digimons.forEach((digimon) => {
+        digimontemplate += `
+            <div class="digimon">
+              <img src="${digimon.img}">
+              <h3>Nombre: ${digimon.name}</h3>
+              <p>lvl: ${digimon.level}</p>
+            </div>
+          `;
+      });
+  
+      const digimonSection = document.querySelector("#ListDigimonInfo");
+      digimonSection.innerHTML = digimontemplate;
+    }
+  
+    const digimonButton = document.querySelector("#listdigimon");
+    digimonButton.addEventListener("click", renderDigimons);
   });
   
