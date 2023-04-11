@@ -67,12 +67,11 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-$("#sobreNosotros").click(function() { 
-  $("#nimrodel_carousel").show();
-})
+  $("#sobreNosotros").click(function() { 
+    $("#nimrodel_carousel").show();
+  });
 
-$("#").click(function() { 
-  $("#nimrodel_carousel").hide();
-})
-
-})
+  $("#cierre__carousel").click(function() { 
+    $("#nimrodel_carousel").hide();
+  });
+});

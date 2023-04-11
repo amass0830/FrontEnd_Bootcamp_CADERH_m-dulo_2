@@ -1,4 +1,5 @@
-/* Classes & Id's from "index.html for a large screen"*/
+/* 
+********************************** MAIN STYLES ******************************* */
 *{
     margin: 0;
     padding: 0;
@@ -58,11 +59,26 @@ p {
     background-image: url("/img/layout/fondo.jpg");
     background-repeat: repeat-x;
     /*Comentario: Asumiendo que la imagen del nav es de esta manera.*/
-}  
+} 
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    margin: 20px;
+}
+
+
+/* 
+********************************** STYLE FORMS  ******************************* */ 
 #form_1, #form_2 { 
     margin: auto;
     padding: 4%;
     margin-top: 4%;
+    margin-bottom: 4%;
     background-color: #303030;
     color: #ccc;
     align-content: center;
@@ -73,18 +89,126 @@ p {
     border-radius: 2%;
     text-align: center;
 }
-#validationCustom05{
-    align-items: center;
-}
+
+/* 
+********************************** CAROUSEL VINO ******************************* 
+*/
+
 .carousel {
     border: 15px solid #ccc;
     background-color: #303030;
     color: #ccc;
     text-align: center;
-    overflow: auto;
+    overflow: hidden;
     width: 100%;
     height: 400px
 }
+
+.carousel img{
+    height: 3rem;
+    width: auto;
+}
+
+#carousel_slider {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#no-markers{
+    list-style: none;
+}
+
+/* 
+********************************** CAROUSEL SOMOS NOSOTROS ******************************* 
+*/
+
+#nimrodel_carousel {
+    border: 15px solid #ccc;
+    background-color: #303030;
+    color: #ccc;
+    margin: 0 auto;
+    max-width: 800px;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    justify-content: center;
+    padding: 2%;
+    display: none;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    display: block;
+    margin: 0 auto;
+    height: 600px;
+    width: 600px;
+}
+
+#no--markers {
+    list-style: none;
+}
+   
+#carousel_slider_nimrodel button {
+    display: block;
+    margin: 0 auto;
+}
+  
+
+#carousel_slider_nimrodel .carousel-control-prev,
+#carousel_slider_nimrodel .carousel-control-next {
+    width: 0;
+  }
+
+#carousel_slider_nimrodel .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+#carousel_slider_nimrodel .carousel-caption h5 {
+    margin-bottom: 1rem;
+}
+  
+  
+.carousel-caption {
+    font-size: 2rem;
+}
+
+#cierre__carousel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+}
+
+#nimrodel_carousel .carousel-control-prev, 
+#nimrodel_carousel .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#nimrodel_carousel .carousel-control-prev {
+  left: 0;
+}
+
+#nimrodel_carousel .carousel-control-next {
+  right: 0;
+}
+
+
+
+/* 
+********************************** STYLE FOOTER ******************************* 
+*/
 
 #footerphoto {
     text-align: center;
@@ -107,9 +231,26 @@ p {
     display: block;
     margin-top: 10%;   
 }
-@media (max-width:991px) {
+
+@media (max-width:650px) {
 
     #formpaginas{
         display: none;
     }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .card {
+        margin:  auto;
+        width: 100%;
+    }
+
+    .carousel-inner img {
+        height: 300px;
+    }
+    
 }
